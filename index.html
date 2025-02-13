@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,11 +61,12 @@
             border-radius: 10px;
             border: 2px solid #ccc;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            cursor: pointer;
         }
         .gallery img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
         #contact {
             padding: 20px;
@@ -108,6 +108,12 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .lightbox img {
+            transition: transform 0.5s ease;
+        }
+        .lightbox img:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
@@ -119,20 +125,20 @@
         </nav>
     </header>
     <section class="gallery" id="gallery">
-        <img src="DSC04788.JPEG" alt="ganesha">
-        <img src="DSC01780.JPEG" alt="ganesha">
-        <img src="DSC01811.JPEG" alt="Sunset View">
-        <img src="DSC01824.jpg" alt="ganesha">
-        <img src="IMG_326.jpeg" alt="House Warming">
-        <img src="DSC02208.JPEG" alt="Portrait">
-        <img src="DSC01758.JPEG" alt="Family Portrait">
-        <img src="DSC02259.jpg" alt="Mountain Landscape">
-        <img src="DSC00437-3.jpg" alt="Mountain Landscape">
-        <img src="DSC02674.JPEG" alt="Ken">
-        <img src="IMG_3266.jpeg" alt="Mountain Landscape">
-        <img src="IMG_6231.jpeg" alt="City Lights">
-        <img src="IMG_3249.jpeg" alt="Sunset View">
-        <img src="IMG_9555.jpeg" alt="Nature Beauty">
+        <a href="DSC04788.JPEG" data-lightbox="gallery" data-title="Ganesha"><img src="DSC04788.JPEG" alt="Ganesha"></a>
+        <a href="DSC01780.JPEG" data-lightbox="gallery" data-title="Ganesha"><img src="DSC01780.JPEG" alt="Ganesha"></a>
+        <a href="DSC01811.JPEG" data-lightbox="gallery" data-title="Sunset View"><img src="DSC01811.JPEG" alt="Sunset View"></a>
+        <a href="DSC01824.jpg" data-lightbox="gallery" data-title="Ganesha"><img src="DSC01824.jpg" alt="Ganesha"></a>
+        <a href="IMG_326.jpeg" data-lightbox="gallery" data-title="House Warming"><img src="IMG_326.jpeg" alt="House Warming"></a>
+        <a href="DSC02208.JPEG" data-lightbox="gallery" data-title="Portrait"><img src="DSC02208.JPEG" alt="Portrait"></a>
+        <a href="DSC01758.JPEG" data-lightbox="gallery" data-title="Family Portrait"><img src="DSC01758.JPEG" alt="Family Portrait"></a>
+        <a href="DSC02259.jpg" data-lightbox="gallery" data-title="Mountain Landscape"><img src="DSC02259.jpg" alt="Mountain Landscape"></a>
+        <a href="DSC00437-3.jpg" data-lightbox="gallery" data-title="Mountain Landscape"><img src="DSC00437-3.jpg" alt="Mountain Landscape"></a>
+        <a href="DSC02674.JPEG" data-lightbox="gallery" data-title="Ken"><img src="DSC02674.JPEG" alt="Ken"></a>
+        <a href="IMG_3266.jpeg" data-lightbox="gallery" data-title="Mountain Landscape"><img src="IMG_3266.jpeg" alt="Mountain Landscape"></a>
+        <a href="IMG_6231.jpeg" data-lightbox="gallery" data-title="City Lights"><img src="IMG_6231.jpeg" alt="City Lights"></a>
+        <a href="IMG_3249.jpeg" data-lightbox="gallery" data-title="Sunset View"><img src="IMG_3249.jpeg" alt="Sunset View"></a>
+        <a href="IMG_9555.jpeg" data-lightbox="gallery" data-title="Nature Beauty"><img src="IMG_9555.jpeg" alt="Nature Beauty"></a>
     </section>
     <section id="contact">
         <h2>Contact Me</h2>
